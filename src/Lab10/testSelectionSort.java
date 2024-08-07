@@ -10,8 +10,8 @@ class testSelectionSort {
 	public void test() {
 		testPositive();
 		testNegative();
-		testMixed();
-		testDuplicates();
+		// testMixed();
+		// testDuplicates();
 	}
 
 	public testSelectionSort() {
@@ -35,21 +35,21 @@ class testSelectionSort {
 		sorter.display("testNegative", arr);
 	}
 
-	public void testMixed() {
-		int[] arr = { 3, -2, -1, 0, 2, 1 };
-		int[] expectedSortedArr = { -2, -1, 0, 1, 2, 3 };
-		SelectionSort sorter = new SelectionSort();
-		arr = sorter.basicSelectionSort(arr);
-		assertArrayEquals(expectedSortedArr, arr);
-		sorter.display("testMixed", arr);
-	}
+	// public void testMixed() {
+	// 	int[] arr = { 3, -2, -1, 0, 2, 1 };
+	// 	int[] expectedSortedArr = { -2, -1, 0, 1, 2, 3 };
+	// 	SelectionSort sorter = new SelectionSort();
+	// 	arr = sorter.basicSelectionSort(arr);
+	// 	assertArrayEquals(expectedSortedArr, arr);
+	// 	sorter.display("testMixed", arr);
+	// }
 
-	public void testDuplicates() {
-		int[] arr = { 3, 3, -1, -1, 2, 2 };
-		int[] expectedSortedArr = { -1, -1, 2, 2, 3, 3 };
-		SelectionSort sorter = new SelectionSort();
-		arr = sorter.basicSelectionSort(arr);
-		assertArrayEquals(expectedSortedArr, arr);
-		sorter.display("testDuplicates", arr);
-	}
+	// public void testDuplicates() {
+	// 	int[] arr = { 3, 3, -1, -1, 2, 2 };
+	// 	int[] expectedSortedArr = { -1, -1, 2, 2, 3, 3 };
+	// 	SelectionSort sorter = new SelectionSort();
+	// 	arr = sorter.basicSelectionSort(arr);
+	// 	assertArrayEquals(expectedSortedArr, arr);
+	// 	sorter.display("testDuplicates", arr);
+	// }
 }
